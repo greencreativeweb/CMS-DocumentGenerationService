@@ -21,16 +21,13 @@ task fatJar(type: Jar) {
     with jar
 }
   
-task initSourceFolders { // add << before { to prevent executing during configuration phase
-   sourceSets*.java.srcDirs*.each { it.mkdirs() }
-   sourceSets*.resources.srcDirs*.each { it.mkdirs() }
-}
-
-task wrapper(type: Wrapper) {
-    gradleVersion = '1.11'
-}
+//task initSourceFolders { // add << before { to prevent executing during configuration phase
+ //  sourceSets*.java.srcDirs*.each { it.mkdirs() }
+//   sourceSets*.resources.srcDirs*.each { it.mkdirs() }
+//}
 
 
+def restEasyVersion = '2.3.6.Final'
 
 // In this section you declare where to find the dependencies of your project
 repositories {
@@ -49,9 +46,9 @@ dependencies {
     // TestNG is also supported by the Gradle Test task. Just change the
     // testCompile dependency to testCompile 'org.testng:testng:6.8.1' and add
     // 'test.useTestNG()' to your build script.
-    testCompile "junit:junit:4.11"
-    testCompile 'org.slf4j:slf4j-log4j12:1.2'
-    compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.2'
-    compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.2'
+    compile "junit:junit:4.11"
+    compile 'org.slf4j:slf4j-log4j12:1.2'
+    compile "org.jboss.resteasy:resteasy-jaxrs:" + restEasyVersion
+    
   
 }
