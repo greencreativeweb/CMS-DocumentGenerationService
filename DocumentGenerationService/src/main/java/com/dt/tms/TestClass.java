@@ -23,4 +23,7 @@ public class TestClass {
 		System.out.println("subtraction....");
 	}
 
+	public void mul(){
+		System.out.println("subtraction....");
+	}
 }
