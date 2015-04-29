@@ -18,5 +18,9 @@ public class TestClass {
 	public void add(){
 		System.out.println("sdfsdfsdfsdf");
 	}
+	
+	public void sub(){
+		System.out.println("subtraction....");
+	}
 
 }
