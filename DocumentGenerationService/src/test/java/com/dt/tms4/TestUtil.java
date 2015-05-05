@@ -1,7 +1,7 @@
 package com.dt.tms4;
 public class TestUtil{
 public void add(){
- int a,b;
+ int a,b,c;
 }
 
 }
