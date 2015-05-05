@@ -9,12 +9,15 @@ the fields as member variables and its getters and setters methods.
 
 ##### Create Jar from the source code
 
-To generate stand alone executable jar for the PdfToXomUtility project, follow below steps:
+To generate stand alone executable jar for the PdfToXomUtility project, follow below steps: 
+
 1. From terminal, go inside CMS-DocumentGenerationService directory.
 2. Execute command:
+
 ```
     gradle build
 ```
+
 3. Look for the generated jar file in  CMS-DocumentGenerationService/PdfToXomUtility/build/libs directory
 4. The jar is generated with name "PdfToXom-1.0.0.jar"
 
