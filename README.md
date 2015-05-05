@@ -26,33 +26,33 @@ To generate stand alone executable jar for the PdfToXomUtility project, follow b
 
 To create java file from given set of pdf files, follow below steps:
 
-* Copy the Executor.sh file and put it in a directory on the file system. Put the "PdfToXom-1.0.0.jar" jar in 
+*  Copy the Executor.sh file and put it in a directory on the file system. Put the "PdfToXom-1.0.0.jar" jar in 
    the same directory.
-* Through Unix terminal, go inside the directory where Executor.sh is kept.
-* To view help, run command:
+*  Through Unix terminal, go inside the directory where Executor.sh is kept.
+*  To view help, run command:
 
 ```
     ./Executor.sh -h
 ```
 
-* To generate java file from pdfs kept in current working directory i.e. the directory where the 
-    Executor.sh and PdfToXom-1.0.0.jar are kept, execute below sample command
+*  To generate java file from pdfs kept in current working directory i.e. the directory where the 
+   Executor.sh and PdfToXom-1.0.0.jar are kept, execute below sample command
 	
 ```
     ./Executor.sh -f pdf1.pdf,pdf2.pdf,pdf3.pdf 
 ```
 
-  Note: There should be no space between pdf file names and it should be comma separated. In above command, pdf1,pdf2
-  etc are given for example. While executing this command you will have to give actual PDF names instead.
+   Note: There should be no space between pdf file names and it should be comma separated. In above command, pdf1,pdf2
+   etc are given for example. While executing this command you will have to give actual PDF names instead.
    
-  Example: suppose your pdf file names are VSD3333.pdf and REG227.pdf then the command to generate java file will
-  as below:
+   Example: suppose your pdf file names are VSD3333.pdf and REG227.pdf then the command to generate java file will
+   as below:
 	
 ```
     ./Executor.sh -f VSD3333.pdf,REG227.pdf
 ``` 
 
-* To generate java file from pdfs which are kept in another directory on the file system use below command
+*  To generate java file from pdfs which are kept in another directory on the file system use below command
 
 ```
     ./Executor.sh -d PATH_OF_PDF_DIRECTORY
